@@ -22,8 +22,8 @@ int main(void)
 
   if(n>0)
   {
-  putchar("%i\n", n);
-putchar(" is positive\n");
+  puts("%i\n", n);
+puts(" is positive\n");
  } 
  else if(n==0)
  {
