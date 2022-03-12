@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - print all combinations of three different digits
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Return: Always 0 (success)
  */
 
 int main(void)
@@ -11,11 +11,11 @@ int main(void)
 	int ten;
 	int hundred;
 
-	for (hundred = '0'; hundred <= '9'; hundred++) /*hundreds place*/
+	for (hundred = '0'; hundreed <= '9'; hundred++)
 	{
-		for (ten = (hundred + 1); ten <= '9'; ten++) /*tens=100s+1*/
+		for (ten = (hundred + 1); ten <= '9'; ten++)
 		{
-			for (one = (ten + 1); one <= '9'; one++) /*ones*/
+			for (one = (ten + 1); one <= '9'; one++)
 			{
 				putchar(hundred);
 				putchar(ten);
