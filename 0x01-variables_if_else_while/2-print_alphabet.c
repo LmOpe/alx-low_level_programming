@@ -1,20 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- *main - Entry point
+ *main - print lowercase a-z
  *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-        char alphabet = 'a';
-	while (alphabet <= 'z')
+	char alpha = 'a';
+
+	while (alpha <= 'z')
 	{
-		putchar(alphabet);
-		alphabet++;
+		putchar(alpha);
+		alpha++;
 	}
 	putchar('\n');
-	       return (0);
+
+	return (0);
 }
