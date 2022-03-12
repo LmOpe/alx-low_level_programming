@@ -18,7 +18,7 @@ int main(void)
 		num++;
 	}
 
-	while(alpha <= 'f')
+	while (alpha <= 'f')
 	{
 		putchar(alpha);
 		alpha++;
