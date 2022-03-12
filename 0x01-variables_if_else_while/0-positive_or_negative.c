@@ -22,15 +22,15 @@ int main(void)
 
   if(n>0)
   {
-  printf(n, " is positive\n");
+  printf("is positive%i\n", n);
  } 
  else if(n==0)
  {
- printf(n, " is zero\n");
+ printf("is zero%i\n", n);
  }
  else if(n<0)
  {
- printf(n, "s negative\n");
+ printf("is negative%i\n", n);
  }
 
 	/* your code goes there */
