@@ -15,22 +15,25 @@ int main(void)
 {
 
 	int n;
+	
 
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
-
+string t1= " is positive";
+string t2= " is zero";
+string t3= " is negative";
   if(n>0)
   {
-  printf(n, " is positive");
+  printf("%i %s", n, t1);
  } 
  else if(n==0)
  {
- printf(n, " is zero");
+ printf("%i %s", n, t2);
  }
  else if(n<0)
  {
- printf(n, " is negative");
+ printf("%i %s", n, t3);
  }
 
 	/* your code goes there */
