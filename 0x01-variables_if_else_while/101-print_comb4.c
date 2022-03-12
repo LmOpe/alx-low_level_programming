@@ -11,7 +11,7 @@ int main(void)
 	int ten;
 	int hundred;
 
-	for (hundred = '0'; hundreed <= '9'; hundred++)
+	for (hundred = '0'; hundred <= '9'; hundred++)
 	{
 		for (ten = (hundred + 1); ten <= '9'; ten++)
 		{
