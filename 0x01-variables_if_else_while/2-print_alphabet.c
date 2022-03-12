@@ -9,6 +9,6 @@
 
 int main(void)
 {
-         putchar("abcdefghijklmnopqrstuvwxyz");
+         putchar("%c", "abcdefghijklmnopqrstuvwxyz\n");
 	       return (0);
 }
