@@ -9,6 +9,12 @@
 
 int main(void)
 {
-         putchar("%c", "abcdefghijklmnopqrstuvwxyz\n");
+        char alphabet = 'a';
+	while (alphabet <= z)
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
+	putchar("\n");
 	       return (0);
 }
