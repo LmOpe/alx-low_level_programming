@@ -20,9 +20,9 @@ int main(void)
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
-string t1= " is positive";
-string t2= " is zero";
-string t3= " is negative";
+ t1= " is positive";
+ t2= " is zero";
+ t3= " is negative";
   if(n>0)
   {
   printf("%i %s", n, t1);
