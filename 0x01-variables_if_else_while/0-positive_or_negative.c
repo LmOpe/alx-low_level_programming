@@ -22,8 +22,8 @@ int main(void)
 
   if(n>0)
   {
-  printf("%i\n", n);
-	  printf(" is positive\n");
+  write("%i\n", n);
+write(" is positive\n");
  } 
  else if(n==0)
  {
