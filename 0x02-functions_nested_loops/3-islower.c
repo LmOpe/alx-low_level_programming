@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * _islower(int c) - checks for lowercase alphabets
+ * _islower - checks for lowercase alphabets
+ * @c: character to check
  * main - Entry point
  * Return: Always 0 (success)
  */
