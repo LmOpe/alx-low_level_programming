@@ -9,12 +9,13 @@
 void print_alphabet(void)
 {
 	char alpha = 'a';
+
 	while (alpha <= 'z')
 	{
-		putchar("%c\n", alpha);
+		putchar(alpha);
 		alpha++;
-		return (0);
 	}
+	putchar("\n");
 }
 
 int main(void)
