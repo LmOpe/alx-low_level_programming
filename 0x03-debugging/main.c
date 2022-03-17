@@ -4,7 +4,7 @@
 /**
  * positive_or_negative: function to test
  * main - Entry point
- * Return: 0 (success)
+ * Return: 0 (successs)
  */
 
 int main(void)
