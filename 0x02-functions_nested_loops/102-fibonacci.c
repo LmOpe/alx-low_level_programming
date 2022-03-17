@@ -20,7 +20,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%li, %li ", a, b);
+			printf("%li, %li", a, b);
 		}
 		a += b;
 		b += a;
