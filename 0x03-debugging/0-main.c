@@ -2,9 +2,8 @@
 #include "main.h"
 
 /**
- * positive_or_negative: function to test
- * main - Entry point
- * Return: 0 (success)
+ * main - tests function that prints if integer is positive of negative
+ * Return: 0
  */
 
 int main(void)
