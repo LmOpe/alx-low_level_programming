@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+<<<<<<< HEAD
 
 /**
  * positive_or_negative: function to test
@@ -13,3 +14,5 @@ int main(void)
 
 	return (0);
 }
+=======
+>>>>>>> fa8cba49e7e6d129a964983539fd537496756dfe
