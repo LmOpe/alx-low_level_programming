@@ -5,16 +5,7 @@
  * @str: the string that is printed
  */
 
-void _puts(char *str)
+void _puts(char *str);
 {
-	int i;
-
-	i = 0;
-
-	while (str[i] != '\0')
-	{
-		putchar(*str[i]);
-		i++;
-	}
-	putchar('\n');
+	printf("%s\n", str);
 }
