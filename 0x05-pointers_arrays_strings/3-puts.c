@@ -5,7 +5,7 @@
  * @str: the string that is printed
  */
 
-void _puts(char *str);
+void _puts(char *str)
 {
 	printf("%s\n", str);
 }
