@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - function that updates the value of the parameter points to to 98
+ * reset_to_98 - function that updates the value the param points to to 98
  * @n: the parameter to change its value
  */
 
