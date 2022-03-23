@@ -20,7 +20,7 @@ int _strlen(char *s)
 }
 
 /**
- * rev_string - function that prints a string in reverse
+ * rev_string - function that reverses a string
  * @s: the string that is reversed
  */
 
