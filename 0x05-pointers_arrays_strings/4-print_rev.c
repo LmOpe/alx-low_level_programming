@@ -2,8 +2,8 @@
 
 /**
  * print_rev - function that prints a string in reverse
- * @s: the string that is printed
  * _strlen - function that returns the length of a string
+ * @s: the string that is printed
  * Return: the legnth of the string
  */
 
