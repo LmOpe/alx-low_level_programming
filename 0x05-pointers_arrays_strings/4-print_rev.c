@@ -20,16 +20,16 @@ int _strlen(char *s)
 
 void print_rev(char *s)
 {
-	int i;
+	int len;
 
-	i = _strlen(s);
+	len = _strlen(s);
 
-	while (i >= 0)
+	len -= 1;
+
+	while (len >= 0)
 	{
-		i -= 1;
-
-		putchar(s[i]);
-		i--;
+		putchar(s[len]);
+		len--;
 	}
 	putchar('\n');
 }
