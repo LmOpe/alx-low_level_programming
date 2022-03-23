@@ -34,7 +34,7 @@ void rev_string(char *s)
 
 	while (len >= 0)
 	{
-		s += putchar(s[len]);
+		s = putchar(s[len]);
 		len--;
 	}
 }
