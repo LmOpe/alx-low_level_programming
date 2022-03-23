@@ -5,17 +5,30 @@
  * @s: the string that is printed
  */
 
+int _strlen(char *s)
+{
+	int i;
+
+	i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
 void print_rev(char *s)
 {
 	int i;
 
-	i = strlen(s);
+	i = _strlen(s);
 
 	while (i >= 0)
 	{
 		i -= 1;
 
-		printf("%s\n", s[i]);
+		putchar('%c\n', s[i]);
 		i--;
 	}
 }
