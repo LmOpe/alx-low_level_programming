@@ -4,9 +4,9 @@
  * print_rev - function that prints a string in reverse
  * @s: the string that is printed
  */
-/**
- * _strlen - function that returns the length of a string
- * Return: the legnth of the string
+/*
+ _strlen - function that returns the length of a string
+ Return: the legnth of the string
  */
 
 int _strlen(char *s)
