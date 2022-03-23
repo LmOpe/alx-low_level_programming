@@ -30,18 +30,25 @@ void puts_half(char *str)
 
 	len = _strlen(str);
 
-	while (str[i] != '\0')
-	{
 		if ((len % 2) != 0)
 		{
 			i = (len - 1) / 2;
+
+			while (str[i] != '\0')
+			{
 			putchar(str[i]);
+			i++;
+			}
 		}
 		else
 		{
 			i = len / 2;
+
+			while (str[i] != '\0')
+			{
 			putchar(str[i]);
+			i++;
+			}
 		}
-	}
 	putchar('\n');
 }
