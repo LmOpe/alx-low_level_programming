@@ -37,4 +37,6 @@ void rev_string(char *s)
 		*s = putchar(s[len]);
 		len--;
 	}
+	*s = *s;
+
 }
