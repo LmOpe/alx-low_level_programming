@@ -13,10 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int res;
-	int a = argv[1];
-	int b = argv[2];
-
-	res = a * b;
+	res = argv[1] * argv[2];
 
 	if (argc != 3);
 	printf("Error\n");
