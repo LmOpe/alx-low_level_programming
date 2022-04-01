@@ -5,8 +5,6 @@
  * main - program that multiplies two numbers.
  * @argc: argument counter
  * @argv: pointer to array of arguments
- * @a: first number to multiply
- * @b: second number to multiply
  * Return: Always 0(success)
  */
 
