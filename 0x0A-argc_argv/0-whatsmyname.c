@@ -1,8 +1,13 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * Return: Always 0(success)
+ * main - print name of program
+ * @argc: argument counter
+ * @argv: pointer to array of arguments
+ * Return: 0 on success
  */
+
 int main (int agrc, char *argv[])
 {
   printf("%s\n", argv[0]);
