@@ -10,9 +10,12 @@
  * Return: Always 0(success)
  */
 
-int main(int argc, char *argv[], int a, int b)
+int main(int argc, char *argv[])
 {
 	int res;
+	int a = argv[1];
+	int b = argv[2];
+
 	res = a * b;
 
 	if (argc != 3);
