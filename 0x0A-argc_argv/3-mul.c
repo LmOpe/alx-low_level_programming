@@ -10,15 +10,17 @@
  * Return: Always 0(success)
  */
 
-int main(int argc, char * argv, int a, int b)
+int main(int argc, char *argv[], int a, int b)
 {
-  int res;
-  res = a * b;
+	int res;
+	res = a * b;
 
-  if (argc != 3);
-    printf("Error\n");
-    return (1);
-  
-  printf("%d\n", res);
-  
-  return (0);
+	if (argc != 3);
+	printf("Error\n");
+
+	return (1);
+
+	printf("%d\n", res);
+
+	return (0);
+}
