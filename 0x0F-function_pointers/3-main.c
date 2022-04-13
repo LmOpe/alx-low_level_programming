@@ -43,3 +43,4 @@ int main(int argc, char *argv[])
 	printf("%d\n", f(n1, n2)); /* calculate via function ptr */
 
 	return (0);
+}
