@@ -6,6 +6,26 @@
  * @array: array that contain the integers
  * @size: size of the array
  * @cmp: pointer to the function to be used
+ * Return: -1 if no element matches, something else otherwise
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
+{
+	if (size <= 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		int i;
+
+		for (i = 0; i < size; i++)
+		{
+			if (cmp(*(array + i)) != 0)
+			{
+				return (i);
+			}
+		}
+		return (-1);
+	}
+}
