@@ -21,11 +21,6 @@ void print_int(va_list *ap)
 {
 	printf("%d", va_arg(*ap, int));
 }
-/**
- * print_str - prints character
- * @ap: character to be printed
- * Return: void
- */
 
 /**
  * print_float - prints character
