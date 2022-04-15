@@ -7,51 +7,51 @@
 
 void _printf(const char * const format, ...)
 {
-    int num_args = strlen(format);
+	int num_args = strlen(format);
 
-    va_list args;
+	va_list args;
 
-    va_start(args, format);
+	va_start(args, format);
 
-    unsigned int i = 0;
-  
-    while (i < num_args)
-    {
-        if (format[i] == 'i')
-        {
-            int x = va_arg(args, int);
+	unsigned int i = 0;
 
-            printf("%d", x);
+	while (i < num_args)
+	{
+		if (format[i] == 'i')
+		{
+			int x = va_arg(args, int);
+
+			printf("%d", x);
 			if (i != (num_args - 1))
 			{
 				printf(", ");
 			}
-        }
-        else if (format[i] == 'f')
-        {
-            double x = va_arg(args, double);
+		}
+		else if (format[i] == 'f')
+		{
+			double x = va_arg(args, double);
 
-            printf("%f", x);
+			printf("%f", x);
 			if (i != (num_args - 1))
 			{
 				printf(", ");
 			}
-        }
-        else if (format[i] == 'c')
-        {
-            char x = va_arg(args, int);
+		}
+		else if (format[i] == 'c')
+		{
+			char x = va_arg(args, int);
 
-            printf("%c", x);
+			printf("%c", x);
 			if (i != (num_args - 1))
 			{
 				printf(", ");
 			}
-        }
-        else if (format[i] == 's')
-        {
-            char *x = va_arg(args, char *);
+		}
+		else if (format[i] == 's')
+		{
+			char *x = va_arg(args, char *);
 
-            if (x == NULL)
+			if (x == NULL)
 			{
 				printf("(nil)");
 			}
@@ -63,10 +63,10 @@ void _printf(const char * const format, ...)
 			{
 				printf(", ");
 			}
-        }
-        i++;
+		}
+		i++;
 
-    }
-    va_end(args);
-    printf("\n");
+	}
+	va_end(args);
+	printf("\n");
 }
