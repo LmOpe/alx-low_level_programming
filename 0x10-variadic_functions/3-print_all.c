@@ -52,8 +52,9 @@ void print_str(va_list *ap)
 }
 
 /**
- * print_all - function that prints all arguments passed into it
- * @format: format specifier
+ * print_all - Function that prints its parameter
+ * @format: first arg
+ * Return: void
  */
 
 void print_all(const char * const format, ...)
@@ -67,15 +68,19 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	n = 0;
 
-	while (*(format + n) != '\0')
+	while (*(format + n) != '\0' && format != NULL)
 	{
 		m = 0;
 		while (*(s + m) != '\0')
 		{
 			if (*(format + n) == *(s + m))
 			{
-				if (p > 0)
-				printf(", ");
+				switch (p)
+				{
+					case 1:
+						printf(", ");
+						break;
+				}
 
 				funcs[m](&ap);
 				p = 1;
