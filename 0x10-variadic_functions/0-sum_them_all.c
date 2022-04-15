@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
  * sum_them_all - function that returns the sum of all its parameters
  * @n: number of the parameters
- * @...: subsequent arguments
  * Return: sum of the arguments
  */
 
