@@ -1,72 +1,91 @@
 #include "variadic_functions.h"
 
 /**
+ * print_char - prints character
+ * @ap: character to be printed
+ * Return: void
+ */
+
+void print_char(va_list *ap)
+{
+	printf("%c", va_arg(*ap, int));
+}
+
+/**
+ * print_int - prints character
+ * @ap: character to be printed
+ * Return: void
+ */
+
+void print_int(va_list *ap)
+{
+	printf("%d", va_arg(*ap, int));
+}
+/**
+ * print_str - prints character
+ * @ap: character to be printed
+ * Return: void
+ */
+
+/**
+ * print_float - prints character
+ * @ap: character to be printed
+ * Return: void
+ */
+
+void print_float(va_list *ap)
+{
+	printf("%f", va_arg(*ap, double));
+}
+
+/**
+ * print_str - prints character
+ * @ap: character to be printed
+ * Return: void
+ */
+
+void print_str(va_list *ap)
+{
+	printf("%s", va_arg(*ap, char *));
+}
+
+/**
  * print_all - function that prints all arguments passed into it
  * @format: format specifier
  */
 
-void _printf(const char * const format, ...)
+void print_all(const char * const format, ...)
 {
-	int num_args = strlen(format);
+	int n, m, p = 0;
+	char *s = "cifs";
+	va_list ap;
 
-	va_list args;
+	void (*funcs[])(va_list *) = {print_char, print_int, print_float, print_str};
 
-	va_start(args, format);
+	va_start(ap, format);
+	n = 0;
 
-	unsigned int i = 0;
-
-	while (i < num_args)
+	while (*(format + n) != '\0')
 	{
-		if (format[i] == 'i')
+		m = 0;
+		while (*(s + m) != '\0')
 		{
-			int x = va_arg(args, int);
-
-			printf("%d", x);
-			if (i != (num_args - 1))
+			if (*(format + n) == *(s + m))
 			{
+				if (p > 0)
 				printf(", ");
-			}
-		}
-		else if (format[i] == 'f')
-		{
-			double x = va_arg(args, double);
 
-			printf("%f", x);
-			if (i != (num_args - 1))
-			{
-				printf(", ");
+				funcs[m](&ap);
+				p = 1;
+				break;
 			}
-		}
-		else if (format[i] == 'c')
-		{
-			char x = va_arg(args, int);
 
-			printf("%c", x);
-			if (i != (num_args - 1))
-			{
-				printf(", ");
-			}
+			m++;
 		}
-		else if (format[i] == 's')
-		{
-			char *x = va_arg(args, char *);
 
-			if (x == NULL)
-			{
-				printf("(nil)");
-			}
-			else
-			{
-				printf("%s", x);
-			}
-			if (i != (num_args - 1))
-			{
-				printf(", ");
-			}
-		}
-		i++;
-
+		n++;
 	}
-	va_end(args);
+
+	va_end(ap);
 	printf("\n");
 }
