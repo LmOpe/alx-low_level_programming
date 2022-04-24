@@ -1,6 +1,6 @@
 #include "lists.h"
 
-void startupFunc (void) --attribute-- ((constructor));
+void startupFunc (void) __attribute__ ((constructor));
 
 /**
  * startupFunc - function that get invoked before main function
