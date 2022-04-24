@@ -4,6 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void startupFunc (void) --attribute-- ((constructor));
+void startupFunc (void) __attribute__ ((constructor));
 
 #endif
