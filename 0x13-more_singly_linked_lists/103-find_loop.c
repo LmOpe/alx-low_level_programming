@@ -1,29 +1,37 @@
 #include "lists.h"
 
 /**
- * reverse_listint - reverse linked list
+ * find_listint_loop - find loop in linked list
  * @head: pointer to head pointer of linked list
- * Return: pointer to first node of reversed list
+ * Return: address of node where loop starts
  */
 
-listint_t *reverse_listint(listint_t **head)
+listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *prev, *next;
+	listint_t *turtle, *hare;
 
-	/* account for no ptr and empty list */
-	if (head == NULL || *head == NULL)
-		return (NULL);
+	/* determine if loop exists by seeing if turtle and hare meets */
+	/* start them at head, move turtle one node and hare two nodes */
+	turtle = hare = head;
 
-	/* iterate thorugh list to reverse linking */
-	prev = NULL;
-	while (*head != NULL)
+	while (turtle != NULL && hare != NULL)
 	{
-		next = (*head)->next; /* keep track of next node to move to */
-		(*head)->next = prev; /* link current node's ptr to prev node */
-		prev = *head; /* update previous node to be current node */
-		*head = next; /* move current node to next node */
-	}
-	(*head) = prev; /* unlink last element from null and point backwards */
+		turtle = turtle->next;
+		hare = hare->next->next;
 
-	return (*head);
+		if (turtle == hare)
+		{
+			/* start turtle at head and hare at address they met */
+			/* move turtle and hare one node to find loop origin */
+			turtle = head;
+			while (turtle != hare)
+			{
+				turtle = turtle->next;
+				hare = hare->next;
+			}
+			return (turtle);
+		}
+	}
+
+	return (NULL);
 }
